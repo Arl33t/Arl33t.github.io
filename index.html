@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>KYC</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header and navbar -->
+    <div class="container-fluid" style="padding: 0;">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <span class="fs-4" style="padding-left: 1em;">
+              <button type="button" class="btn btn-primary" disabled><b>B</b></button>
+            Bank AS
+          </span>
+        </a>
+  
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">KYC</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Meldinger</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Instillinger</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Profil</a></li>
+        </ul>
+      </header>
+    </div>
+    
+    <!-- Title -->
+    <div class="container pt-2">
+        <div class="row">
+            <h1><b>K</b>now <b>Y</b>our <b>C</b>ustomer</h1>
+        </div>
+        <div class="row">
+          <p>
+            Her kan du utføre ein såkalla "PEP-sjekk", 
+            ein sjekk om nokon er ein <b>p</b>olitisk <b>e</b>ksponert <b>p</b>erson.
+          </p>
+        </div>
+    </div>
+    
+    <!-- Searchfield -->
+    <div class="container pt-5">
+      <div class="row justify-content-center">
+        <h2 class="col-sm-6 ">Søk på person:</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-4 pt-2">
+          <input type="search"
+                class="form-control" 
+                name="" 
+                id="searchInput" 
+                aria-describedby="helpId" 
+                placeholder="Ola Nordmann"
+                onkeyup="search(event)">
+        </div>
+        <!-- Search Button -->
+        <div class="col-sm-1 pt-2">
+          <button id="searchBtn" class="btn btn-primary px-4" role="button" onclick="search('btn');">Søk</button>
+        </div>
+      </div>
+      <!-- Loading Animation -->
+      <div class="row pt-5 justify-content-center" id="loading" style="display: none;">
+        <div class="col-1">
+          <div class="spinner-border"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tables -->
+    <div class="container p-5 my-5" id="tablesCont">
+      <div class="row pb-2" >
+        <p class="text-center h6" id="hitsAmount"></p>
+      </div>
+      <div class="row table-responsive" id="tables">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+      <p class="text-center text-muted">@Arle F. Solheim</p>
+    </footer>
+</body>
+</html>
