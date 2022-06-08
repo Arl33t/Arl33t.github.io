@@ -1,7 +1,40 @@
-body {
-    background-color: rgb(240, 240, 245);
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: orange;
+    text-shadow: 2px 2px black;
+  }
+
+.anchor {
+    position: absolute;
+    transform: translateY(-50vh);
 }
 
-header {
-    background-color: white;
+h1, h2 {
+  /* color: yellow; */
+}
+
+#carouselServices h5 {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.carousel-item p {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#contactInfo p {
+  color: rgba(255, 166, 0, 0.75);
+}
+
+footer {
+  background-color: orange;
+}
+
+#footerCredits {
+  text-align: right;
+  background-color: orangered;
 }
