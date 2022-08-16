@@ -1,7 +1,7 @@
 .centered {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     color: orange;
     text-shadow: 2px 2px black;
